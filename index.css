@@ -28,6 +28,7 @@ img {
 .wrapper {
   display: grid;
   grid-gap: 20px;
+  min-height: 100%;
 }
 
 /*Navigation*/
@@ -78,19 +79,23 @@ img {
   padding-top: 0.5rem;
   align-self: center;
   justify-content: center;
-  margin-top: 2rem;
-  border-top: dashed black;
+  border-bottom: dashed black;
+  border-top: solid black;
 }
 
 /* ------Footer-------------- */
 .main-footer {
-  border-top: solid black;
   color: var(--words);
   text-align: center;
 
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 10px;
+
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding: 2rem;
 }
 .main-footer a {
   align-self: center;
