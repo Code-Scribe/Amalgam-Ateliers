@@ -54,16 +54,6 @@ img {
   background: lightblue;
   color: black;
 }
-
-/*--------Second Nav----------*/
-.second-nav ul {
-  display: grid;
-  grid-gap: 10px;
-  list-style: none;
-  grid-template-columns: 0.5fr;
-  justify-content: center;
-  padding-right: 2rem;
-}
 /*-----Logo Container-------*/
 .main-box {
   display: grid;
@@ -99,10 +89,11 @@ img {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 10px;
-  padding: 2rem;
+
   position: fixed;
-  bottom: 0;
   left: 0;
+  bottom: 0;
+  padding: 2rem;
 }
 .main-footer a {
   align-self: center;
@@ -112,6 +103,10 @@ img {
   .main-nav ul {
     grid-template-columns: 1fr;
   }
+  .second-nav ul {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
   .softlink {
     grid-template-columns: 1fr 1fr 1fr 0.5fr 1fr 1fr 1fr;
   }
@@ -119,6 +114,9 @@ img {
 
 @media (max-width: 500px) {
   .main-nav ul {
+    grid-template-columns: 1fr;
+  }
+  .second-nav ul {
     grid-template-columns: 1fr;
   }
   .softlink {
