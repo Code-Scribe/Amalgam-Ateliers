@@ -60,7 +60,8 @@ img {
   display: grid;
   grid-gap: 10px;
   list-style: none;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 0.5fr;
+  justify-content: center;
   padding-right: 2rem;
 }
 /*-----Logo Container-------*/
@@ -98,36 +99,22 @@ img {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 10px;
-
-  position: fixed;
-  left: 0;
-  bottom: 0;
   padding: 2rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }
 .main-footer a {
   align-self: center;
 }
 
 @media (max-width: 700px) {
-  .main-nav ul {
-    grid-template-columns: 1fr;
-  }
-  .second-nav ul {
-    grid-template-columns: 0.8fr;
-    justify-content: center;
-  }
   .softlink {
     grid-template-columns: 1fr 1fr 1fr 0.5fr 1fr 1fr 1fr;
   }
 }
 
 @media (max-width: 500px) {
-  .main-nav ul {
-    grid-template-columns: 1fr;
-  }
-  .second-nav ul {
-    grid-template-columns: 1fr;
-  }
   .softlink {
     grid-template-columns: 0.2fr 0.2fr 0.2fr 0fr;
   }
