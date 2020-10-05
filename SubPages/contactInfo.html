@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amalgam-Ateliers/Info</title>
+    <link type="text/css" rel="stylesheet" href="contactInfo.css" />
+    <link
+      href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-------NAV----->
+      <nav class="main-nav">
+        <ul>
+          <li>
+            <a class="btn" href="https://www.amalgam-ateliers.com/"
+              ><i class="fa fa-home"></i> Home</a
+            >
+          </li>
+          <li></li>
+          <li class="dropdown">
+            <a class="btn" href="#"
+              ><i class="fab fa-buromobelexperte"></i> Services
+              <i class="fa fa-caret-down"></i>
+              <div class="dropdown-content">
+                <div href="#">Web Design</div>
+                <a href="#">Graphic Design</a>
+                <a href="#">3D Deign</a>
+                <a href="#">Amalgam Creatures</a>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="btn" href="#"><i class="fas fa-code"></i> Information</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="FAQ">
+        <div class="answers">
+          <h1 class="title">FAQ</h1>
+          <button class="collapsible">
+            How do I order a Custom Image Graphic?
+          </button>
+          <div class="content">
+            <p>
+              Simply navigate to the Contact a Designer Form on the Graphic
+              Design Page, and check the boxes for the type of graphic you are
+              interested in. Then fill in the additional information box with
+              more details describing what you are looking for. After submitting
+              the form a designer will get in to contact with you through the
+              email used to submit the form.
+            </p>
+          </div>
+
+          <button class="collapsible">
+            Do you print the graphics you make?
+          </button>
+          <div class="content">
+            <p>
+              No, we currently only supply a digital download to our customers,
+              that they can then take to any print shop or store to print for
+              their needs. All physical print requests are treated as custom
+              services and are subject to the Contact a Designer Form Process
+            </p>
+          </div>
+
+          <button class="collapsible">How do you accept payments</button>
+          <div class="content">
+            <p>
+              We use paypal to process all of our payments and transactions so
+              that all purchases are safe and secure. It also allows us to send
+              invoices and forms that allow us to cover more elaborate design
+              work.
+            </p>
+          </div>
+
+          <button class="collapsible">What software do you use?</button>
+          <div class="content">
+            <p>
+              We have links to the software we use in the footer of our site,
+              simply click the Icons
+            </p>
+            <p>[Graphics Design Programs]: Affinity Design Suite, Krita.</p>
+            <p>[3D Design]: Blender, Magica Voxel.</p>
+            <p>[Web Design]: Visual Studio Code.</p>
+          </div>
+
+          <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                  content.style.maxHeight = null;
+                } else {
+                  content.style.maxHeight = content.scrollHeight + "px";
+                }
+              });
+            }
+          </script>
+        </div>
+      </section>
+      <section class="contactForm">
+        <iframe
+          class="form"
+          src="https://docs.google.com/forms/d/e/1FAIpQLSdT4EhSMKr4teD4A-Piktwlw9V1Zsxglv3ZAbjN5jkkh5AkfA/viewform?embedded=true"
+          width="640"
+          height="842"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+          >Loading…</iframe
+        >
+      </section>
+    </div>
+    <!---------wrapper ends--->
+  </body>
+</html>
